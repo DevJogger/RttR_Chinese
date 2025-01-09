@@ -2,3 +2,4 @@
 rttrUtils*/
 *.otf
 *.ttf
+.env

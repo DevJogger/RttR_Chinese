@@ -1,2 +1,3 @@
-`font2image.py` generates Chinese characters images for the game RttR (The Settlers 2) from otf/ttf font files. The output images need to be packed into a `fonts.lst` file with the tool provided by [the tool](https://github.com/Return-To-The-Roots/libsiedler2/releases/tag/v1.1.4).
+`font2image.py` is a script that generates Chinese characters images for the game RttR (The Settlers 2) from otf/ttf font files. The output images need to be packed into a `fonts.lst` file with the tool provided by [the tool](https://github.com/Return-To-The-Roots/libsiedler2/releases/tag/v1.1.4).
 
+`auto_translation_by_DeepL.py` is a script that automatically translates the game text using the DeepL API.
