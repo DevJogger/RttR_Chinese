@@ -21,7 +21,12 @@ def generate_font_images(font_path, output_dir, font_pixel_size=24, max_size=14,
 
     # testing characters
     unicode_chars = [0x5173, 0x95ED, 0x8FD4, 0x56DE]  # 关，闭，返，回
-    characters_range = range(0x4E00, 0x9FFF + 1) if not test else unicode_chars
+    characters_range = (
+        list(range(0x4E00, 0x9FFF + 1)) +  # Common Chinese characters
+        list(range(0x3000, 0x303F + 1)) +  # Full-width punctuation
+        list(range(0xFF00, 0xFFEF + 1))    # CJK symbols and punctuation
+        if not test else unicode_chars
+    )
 
     # Define the palette
     palette = [0, 0, 0,  # black
